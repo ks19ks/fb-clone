@@ -20,6 +20,8 @@ gem 'mimemagic', '~> 0.3.0'
 
 gem 'bcrypt', '3.1.11'
 
+gem 'jquery-rails'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
