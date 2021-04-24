@@ -1,12 +1,12 @@
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @picture.image.url %>
-</p>
-
-<p>
-  <strong>Comment:</strong>
-  <%= @picture.comment %>
-</p>
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+<div class="row">
+  <div class="col-12">
+    <div class="text-muted h7 mb-2">
+      <i class="far fa-clock"></i> <%= @picture.created_at.strftime('%Y/%m/%d %H:%M') %>
+      posted by @<%= current_user.name %>
+    </div>
+    <p><%= @picture.comment %></p>
+    <p><%= image_tag @picture.image.url %></p>
+    <%= link_to 'Edit', edit_picture_path(@picture), class: 'btn btn-link' %> |
+    <%= link_to 'Back', pictures_path, class: 'btn btn-link' %>
+  </div>
+</div>
