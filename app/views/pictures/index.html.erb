@@ -54,7 +54,7 @@
               <i class="far fa-clock"></i> <%= picture.created_at.strftime('%Y/%m/%d %H:%M') %>
             </div>
             <p class="card-text"><%= picture.comment %></p>
-            <p><%= image_tag picture.image.url %></p>
+            <p><%= image_tag picture.image.url, class: 'img-fluid' %></p>
           </div>
           <div class="card-footer">
             <a href="#" class="card-link"><i class="fab fa-gratipay"></i> Like</a>
