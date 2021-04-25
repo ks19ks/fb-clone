@@ -21,11 +21,13 @@
   <div class="col-lg-9">
     <div class="text-muted h7 mb-2">
       <i class="far fa-clock"></i> <%= @picture.created_at.strftime('%Y/%m/%d %H:%M') %>
-      posted by @<%= current_user.name %>
+      posted by @<%= @picture.user.name %>
     </div>
     <p><%= @picture.comment %></p>
     <p><%= image_tag @picture.image.url, class: 'img-fluid' %></p>
-    <%= link_to 'Edit', edit_picture_path(@picture), class: 'btn btn-link' %> |
+    <% if @picture.user_id == current_user.id %>
+      <%= link_to 'Edit', edit_picture_path(@picture), class: 'btn btn-link' %> |
+    <% end %>
     <%= link_to 'Back', pictures_path, class: 'btn btn-link' %>
   </div>
 </div>
