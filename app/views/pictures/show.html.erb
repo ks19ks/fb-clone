@@ -1,5 +1,24 @@
 <div class="row">
-  <div class="col-12">
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="h5 text-blue">@<%= current_user.name %></div>
+        <div class="h7"><strong>Name:</strong> <%= current_user.name %></div>
+        <div class="h7"><strong>About:</strong> Web developer, Python, Ruby, etc.</div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="h6 text-muted">Followers</div>
+          <div class="h5">52,342</div>
+        </li>
+        <li class="list-group-item">
+          <div class="h6 text-muted">Following</div>
+          <div class="h5">6,758</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col">
     <div class="text-muted h7 mb-2">
       <i class="far fa-clock"></i> <%= @picture.created_at.strftime('%Y/%m/%d %H:%M') %>
       posted by @<%= current_user.name %>

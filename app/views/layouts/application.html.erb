@@ -10,7 +10,6 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
   </head>
-
   <body>
     <div class="container">
       <div class="row">
@@ -36,5 +35,10 @@
       <% end %>    
       <%= yield %>
     </div>
+    <script>
+      $(document).ready(function () {
+        bsCustomFileInput.init();
+      });
+    </script>
   </body>
 </html>

@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap/dist/js/bootstrap.bundle.min.js
+//= require bs-custom-file-input/dist/bs-custom-file-input.min.js
 //= require_tree .
