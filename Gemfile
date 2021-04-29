@@ -18,7 +18,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'mimemagic', '~> 0.3.0'
 
-gem 'bcrypt', '3.1.11'
+gem 'bcrypt', '~> 3.1'
 
 gem 'jquery-rails'
 
